@@ -1,0 +1,19 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class geron {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("a = ");
+        double a = in.nextDouble();
+        System.out.print("b= ");
+        double b = in.nextDouble();
+        System.out.print("c = ");
+        double c = in.nextDouble();
+        double p = (a + b + c) / 2; // semiperimeter
+        int s = (int)(Math.sqrt(p * (p - a) * (p - b) * (p - c)));
+        System.out.println("The area of triangle is " + s);
+        }
+    }
