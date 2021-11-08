@@ -8,7 +8,7 @@ public class geron {
 
         System.out.print("a = ");
         double a = in.nextDouble();
-        System.out.print("b= ");
+        System.out.print("b = ");
         double b = in.nextDouble();
         System.out.print("c = ");
         double c = in.nextDouble();
