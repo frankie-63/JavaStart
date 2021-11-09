@@ -1,0 +1,18 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class numbers123 {
+    public static void main (String[] args) {
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Please input number 1 or 2 or 3");
+        byte num = in.nextByte();
+        if (num == 1) System.out.println("You've input 1");
+        else if (num == 2) System.out.println("You've input 2");
+        else System.out.println("You've input 3");
+
+        in.close();
+    }
+}
