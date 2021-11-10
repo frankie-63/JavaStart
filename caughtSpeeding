@@ -1,0 +1,31 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class caughtSpeeding {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Your speed is: ");
+        short speed = in.nextShort();
+
+        System.out.println("Is it your birthday today (yes or no)?");
+        String day = in.next();
+
+        in.close();
+
+
+        if (day.equals("yes")) speed +=5;
+
+        byte ticket = 0;
+
+        if (speed >= 61 && speed <= 80 ) ticket++;
+        else if (speed >= 81) ticket += 2;
+
+        switch (ticket) {
+            case 0: System.out.println("no ticket");break;
+            case 1: System.out.println("small ticket");break;
+            case 2: System.out.println("big ticket");break;
+        }
+    }
+}
