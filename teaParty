@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class teaParty {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Please input an amount of tea");
+        short tea = in.nextShort();
+        System.out.println("Please input an amount of candy");
+        short candy = in.nextShort();
+
+        if (tea < 5 || candy < 5)
+        System.out.println("A party is bad");
+
+        else if (tea / candy >= 2 || candy / tea >= 2)
+        System.out.println("A party is great");
+
+        else System.out.println("A party is good");
+
+    }
+}
