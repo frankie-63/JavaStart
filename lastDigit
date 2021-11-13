@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class lastDigit {
+
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+
+    System.out.println("Input two positive integers");
+    int x = scanner.nextInt();
+    int y = scanner.nextInt();
+    boolean b;
+
+    if ((x % 10) == (y % 10)) b = true;
+    else b = false;
+
+    System.out.println(b);
+
+    scanner.close();
+
+  }
+}
